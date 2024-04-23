@@ -44,8 +44,8 @@ class ProjectV3Mapper implements ArrayToLandingPageMapper
                     $value['enabled'] ?? false,
                 )),
                 ElementName::CONTACT => $landingPage->addElement(new Contact(
-                    $value['description'] ?? '',
-                    $value['enabled'] ?? false,
+                    description: $value['description'] ?? '',
+                    enabled: $value['enabled'] ?? false,
                 )),
                 ElementName::NEWSLETTER => $landingPage->addElement(new Newsletter(
                     $value['description'] ?? '',

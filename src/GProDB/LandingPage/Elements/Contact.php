@@ -10,6 +10,9 @@ class Contact extends AbstractElement
 {
     public function __construct(
         public string $description = '',
+        public string $email = '',
+        public string $phone = '',
+        public string|null $googleMapsUrl = null,
         public bool $enabled = true,
     ) {
     }
