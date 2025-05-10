@@ -24,6 +24,8 @@ class MapperFactory
     {
         return new ArrayToLandingPage(
             new ArrayToLandingPageMapperCollection([
+                new ArrayToLandingPage\ProjectV1Mapper(),
+                new ArrayToLandingPage\ProjectV2Mapper(),
                 new ArrayToLandingPage\ProjectV3Mapper(),
             ])
         );
